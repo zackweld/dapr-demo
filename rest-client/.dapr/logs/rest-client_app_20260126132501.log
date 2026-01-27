@@ -1,0 +1,105 @@
+== APP - rest-client == 
+== APP - rest-client ==   .   ____          _            __ _ _
+== APP - rest-client ==  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+== APP - rest-client == ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+== APP - rest-client ==  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+== APP - rest-client ==   '  |____| .__|_| |_|_| |_\__, | / / / /
+== APP - rest-client ==  =========|_|==============|___/=/_/_/_/
+== APP - rest-client == 
+== APP - rest-client ==  :: Spring Boot ::                (v3.3.1)
+== APP - rest-client == 
+== APP - rest-client == 2026-01-26T13:25:02.014-05:00  INFO 20831 --- [           main] com.RestClientApplication                : Starting RestClientApplication v0.0.1-SNAPSHOT using Java 25.0.1 with PID 20831 (/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar started by zacharyweld in /Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client)
+== APP - rest-client == 2026-01-26T13:25:02.018-05:00  INFO 20831 --- [           main] com.RestClientApplication                : No active profile set, falling back to 1 default profile: "default"
+== APP - rest-client == WARNING: A restricted method in java.lang.System has been called
+== APP - rest-client == WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (jar:nested:/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tomcat-embed-core-10.1.25.jar!/)
+== APP - rest-client == WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+== APP - rest-client == WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+== APP - rest-client == 
+== APP - rest-client == 2026-01-26T13:25:02.704-05:00  INFO 20831 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9001 (http)
+== APP - rest-client == 2026-01-26T13:25:02.710-05:00  INFO 20831 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+== APP - rest-client == 2026-01-26T13:25:02.710-05:00  INFO 20831 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+== APP - rest-client == 2026-01-26T13:25:02.723-05:00  INFO 20831 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+== APP - rest-client == 2026-01-26T13:25:02.724-05:00  INFO 20831 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 667 ms
+== APP - rest-client == 2026-01-26T13:25:02.962-05:00  INFO 20831 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9001 (http) with context path '/'
+== APP - rest-client == 2026-01-26T13:25:02.971-05:00  INFO 20831 --- [           main] com.RestClientApplication                : Started RestClientApplication in 1.15 seconds (process running for 1.433)
+== APP - rest-client == 2026-01-26T13:25:03.032-05:00  INFO 20831 --- [nio-9001-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+== APP - rest-client == 2026-01-26T13:25:03.032-05:00  INFO 20831 --- [nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+== APP - rest-client == 2026-01-26T13:25:03.032-05:00  INFO 20831 --- [nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+== APP - rest-client == WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+== APP - rest-client == WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4 (jar:nested:/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/grpc-netty-shaded-1.69.0.jar!/)
+== APP - rest-client == WARNING: Please consider reporting this to the maintainers of class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4
+== APP - rest-client == WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+== APP - rest-client == 2026-01-26T13:25:30.023-05:00 ERROR 20831 --- [nio-9001-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: io.dapr.exceptions.DaprException: UNKNOWN: No serializer found for class com.models.Settings and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)] with root cause
+== APP - rest-client == 
+== APP - rest-client == com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class com.models.Settings and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+== APP - rest-client == 	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1330) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:53) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:30) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4799) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsBytes(ObjectMapper.java:4065) ~[jackson-databind-2.17.1.jar!/:2.17.1]
+== APP - rest-client == 	at io.dapr.client.ObjectSerializer.serialize(ObjectSerializer.java:77) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.serializer.DefaultObjectSerializer.serialize(DefaultObjectSerializer.java:31) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.DaprClientImpl.buildStateRequest(DaprClientImpl.java:848) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.DaprClientImpl.saveBulkState(DaprClientImpl.java:835) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.AbstractDaprClient.saveBulkState(AbstractDaprClient.java:488) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.DaprClientImpl.saveBulkState(DaprClientImpl.java:150) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.AbstractDaprClient.saveState(AbstractDaprClient.java:509) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.DaprClientImpl.saveState(DaprClientImpl.java:150) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.AbstractDaprClient.saveState(AbstractDaprClient.java:496) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.DaprClientImpl.saveState(DaprClientImpl.java:150) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at com.controller.Controller.updateSettings(Controller.java:30) ~[!/:0.0.1-SNAPSHOT]
+== APP - rest-client == 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+== APP - rest-client == 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+== APP - rest-client == 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+== APP - rest-client == 
+
+termination signal received: shutting down

@@ -1,0 +1,77 @@
+Starting Dapr with id rest-client. HTTP Port: 57196. gRPC Port: 57197
+Updating metadata for cliPID: 82411
+time="2026-01-25T15:36:36.611034-05:00" level=info msg="Starting Dapr Runtime -- version 1.16.7 -- commit f47f8e13a6e39869ac2b01fe984ad2177e357445" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.611077-05:00" level=info msg="Log level set to: info" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.611555-05:00" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.security type=log ver=1.16.7
+time="2026-01-25T15:36:36.618178-05:00" level=info msg="Enabled features: SchedulerReminders" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.618566-05:00" level=info msg="metric spec: {\"enabled\":true}" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.diagnostics type=log ver=1.16.7
+time="2026-01-25T15:36:36.618589-05:00" level=info msg="Using default latency distribution buckets: [1 2 3 4 5 6 8 10 13 16 20 25 30 40 50 65 80 100 130 160 200 250 300 400 500 650 800 1000 2000 5000 10000 20000 50000 100000]" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.diagnostics type=log ver=1.16.7
+time="2026-01-25T15:36:36.618806-05:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.diagnostics type=log ver=1.16.7
+time="2026-01-25T15:36:36.621845-05:00" level=info msg="standalone mode configured" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.621899-05:00" level=info msg="app id: rest-client" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.622115-05:00" level=info msg="metrics server started on 0.0.0.0:57198/" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.624173-05:00" level=info msg="Dapr trace sampler initialized: ParentBased{root:AlwaysOnSampler,remoteParentSampled:AlwaysOnSampler,remoteParentNotSampled:AlwaysOffSampler,localParentSampled:AlwaysOnSampler,localParentNotSampled:AlwaysOffSampler}" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.625913-05:00" level=info msg="local service entry announced: rest-client -> 192.168.11.124:57199" app_id=rest-client component="nr (mdns/v1)" instance=Mac.nolongerbound scope=dapr.contrib type=log ver=1.16.7
+time="2026-01-25T15:36:36.625927-05:00" level=info msg="Initialized name resolution to mdns" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.626481-05:00" level=info msg="Loading components…" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.632496-05:00" level=info msg="Connected and received scheduler hosts addresses: [localhost:50006]" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.scheduler.watchhosts type=log ver=1.16.7
+time="2026-01-25T15:36:36.632595-05:00" level=info msg="Scheduler client initialized for address: localhost:50006" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.scheduler.clients type=log ver=1.16.7
+time="2026-01-25T15:36:36.632607-05:00" level=info msg="Scheduler clients initialized" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.scheduler.clients type=log ver=1.16.7
+time="2026-01-25T15:36:36.63913-05:00" level=info msg="Component loaded: pubsub (pubsub.redis/v1)" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.processor type=log ver=1.16.7
+time="2026-01-25T15:36:36.639167-05:00" level=info msg="Waiting for all outstanding components to be processed…" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.644678-05:00" level=info msg="Using 'statestore' as actor state store" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.processor.state type=log ver=1.16.7
+time="2026-01-25T15:36:36.644737-05:00" level=info msg="Component loaded: statestore (state.redis/v1)" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.processor type=log ver=1.16.7
+time="2026-01-25T15:36:36.644754-05:00" level=info msg="All outstanding components processed" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.644763-05:00" level=info msg="Loading endpoints…" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.644925-05:00" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.644935-05:00" level=info msg="All outstanding http endpoints processed" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.645084-05:00" level=info msg="Loading Declarative Subscriptions…" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.645588-05:00" level=info msg="gRPC server listening on TCP address: :57197" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.grpc.api type=log ver=1.16.7
+time="2026-01-25T15:36:36.645759-05:00" level=info msg="Enabled gRPC tracing middleware" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.grpc.api type=log ver=1.16.7
+time="2026-01-25T15:36:36.645769-05:00" level=info msg="Enabled gRPC metrics middleware" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.grpc.api type=log ver=1.16.7
+time="2026-01-25T15:36:36.646028-05:00" level=info msg="Registering workflow engine for gRPC endpoint: [::]:57197" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.grpc.api type=log ver=1.16.7
+time="2026-01-25T15:36:36.646415-05:00" level=info msg="API gRPC server is running on port 57197" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.646656-05:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-25T15:36:36.646909-05:00" level=info msg="Enabled max body size HTTP middleware with size 4194304 bytes" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-25T15:36:36.646918-05:00" level=info msg="Enabled tracing HTTP middleware" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-25T15:36:36.646928-05:00" level=info msg="Enabled metrics HTTP middleware" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-25T15:36:36.647369-05:00" level=info msg="HTTP server listening on TCP address: :57196" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-25T15:36:36.647549-05:00" level=info msg="HTTP server is running on port 57196" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.647561-05:00" level=info msg="The request body size parameter is: 4194304 bytes" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.647592-05:00" level=info msg="gRPC server listening on TCP address: :57199" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.grpc.internal type=log ver=1.16.7
+time="2026-01-25T15:36:36.647603-05:00" level=info msg="Enabled gRPC tracing middleware" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.grpc.internal type=log ver=1.16.7
+time="2026-01-25T15:36:36.647609-05:00" level=info msg="Enabled gRPC metrics middleware" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.grpc.internal type=log ver=1.16.7
+time="2026-01-25T15:36:36.647632-05:00" level=info msg="Internal gRPC server is running on :57199" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:36.64764-05:00" level=info msg="application protocol: http. waiting on port 9001.  This will block until the app is listening on that port." app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+Updating metadata for app command: java -jar target/RestClient-0.0.1-SNAPSHOT.jar
+Updating metadata for appPID: 82420
+You're up and running! Dapr logs will appear here.
+
+time="2026-01-25T15:36:37.657773-05:00" level=info msg="application discovered on port 9001" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:37.657912-05:00" level=info msg="Using Scheduler service for reminders." app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actor.reminders.scheduler type=log ver=1.16.7
+time="2026-01-25T15:36:37.657978-05:00" level=info msg="Actor runtime started" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actor type=log ver=1.16.7
+time="2026-01-25T15:36:37.658027-05:00" level=warning msg="Graceful shutdown timeout is infinite, will wait indefinitely to shutdown" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actor type=log ver=1.16.7
+time="2026-01-25T15:36:37.658599-05:00" level=info msg="worker started with backend dapr.actors/v1" app_id=rest-client instance=Mac.nolongerbound scope=dapr.wfengine.durabletask.backend type=log ver=1.16.7
+time="2026-01-25T15:36:37.658767-05:00" level=info msg="Workflow engine started" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.wfengine type=log ver=1.16.7
+time="2026-01-25T15:36:37.721225-05:00" level=info msg="Application configuration loaded" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:37.723212-05:00" level=info msg="dapr initialized. Status: Running. Init Elapsed 1101ms" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-25T15:36:37.723426-05:00" level=info msg="Reporting actor types: []" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actors.placement type=log ver=1.16.7
+time="2026-01-25T15:36:37.723939-05:00" level=info msg="Connected to placement localhost:50005" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actors.placement.client.connector.static type=log ver=1.16.7
+time="2026-01-25T15:36:37.724003-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+time="2026-01-25T15:36:37.724024-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+time="2026-01-25T15:36:37.724013-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+time="2026-01-25T15:36:37.726828-05:00" level=info msg="Connected to placement localhost:50005" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actors.placement.client type=log ver=1.16.7
+time="2026-01-25T15:36:37.728462-05:00" level=info msg="Placement tables updated, version: 0" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actors.placement type=log ver=1.16.7
+time="2026-01-25T15:36:37.728509-05:00" level=info msg="Running actor reminder migration from state store to scheduler" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.7
+time="2026-01-25T15:36:37.728522-05:00" level=info msg="Skipping migration, no missing scheduler reminders found" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.7
+time="2026-01-25T15:36:37.728542-05:00" level=info msg="Found 0 missing scheduler reminders from state store" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.7
+time="2026-01-25T15:36:37.728549-05:00" level=info msg="Migrated 0 reminders from state store to scheduler successfully" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.7
+time="2026-01-25T15:41:01.153307-05:00" level=info msg="Received signal 'interrupt'; beginning shutdown" app_id=rest-client instance=Mac.nolongerbound scope=dapr.signals type=log ver=1.16.7
+
+termination signal received: shutting down
+time="2026-01-25T15:41:01.154144-05:00" level=info msg="backend stopping..." app_id=rest-client instance=Mac.nolongerbound scope=dapr.wfengine.durabletask.backend type=log ver=1.16.7
+time="2026-01-25T15:41:01.154447-05:00" level=info msg="workers stopping and draining..." app_id=rest-client instance=Mac.nolongerbound scope=dapr.wfengine.durabletask.backend type=log ver=1.16.7
+time="2026-01-25T15:41:01.154439-05:00" level=info msg="Scheduler stream disconnected" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+Exited Dapr successfully
+time="2026-01-25T15:41:01.154635-05:00" level=info msg="Scheduler stream disconnected" app_id=rest-client instance=Mac.nolongerbound scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+Exited App successfully

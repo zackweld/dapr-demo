@@ -1,0 +1,54 @@
+== APP - rest-client == 
+== APP - rest-client ==   .   ____          _            __ _ _
+== APP - rest-client ==  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+== APP - rest-client == ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+== APP - rest-client ==  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+== APP - rest-client ==   '  |____| .__|_| |_|_| |_\__, | / / / /
+== APP - rest-client ==  =========|_|==============|___/=/_/_/_/
+== APP - rest-client == 
+== APP - rest-client ==  :: Spring Boot ::                (v3.3.1)
+== APP - rest-client == 
+== APP - rest-client == 2026-01-27T16:12:50.469-05:00  INFO 54323 --- [           main] com.RestClientApplication                : Starting RestClientApplication v0.0.1-SNAPSHOT using Java 25.0.1 with PID 54323 (/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar started by zacharyweld in /Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client)
+== APP - rest-client == 2026-01-27T16:12:50.471-05:00  INFO 54323 --- [           main] com.RestClientApplication                : No active profile set, falling back to 1 default profile: "default"
+== APP - rest-client == WARNING: A restricted method in java.lang.System has been called
+== APP - rest-client == WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (jar:nested:/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tomcat-embed-core-10.1.25.jar!/)
+== APP - rest-client == WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+== APP - rest-client == WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+== APP - rest-client == 
+== APP - rest-client == 2026-01-27T16:12:51.140-05:00  INFO 54323 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9001 (http)
+== APP - rest-client == 2026-01-27T16:12:51.145-05:00  INFO 54323 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+== APP - rest-client == 2026-01-27T16:12:51.145-05:00  INFO 54323 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+== APP - rest-client == 2026-01-27T16:12:51.158-05:00  INFO 54323 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+== APP - rest-client == 2026-01-27T16:12:51.158-05:00  INFO 54323 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 643 ms
+== APP - rest-client == 2026-01-27T16:12:51.392-05:00  INFO 54323 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9001 (http) with context path '/'
+== APP - rest-client == 2026-01-27T16:12:51.401-05:00  INFO 54323 --- [           main] com.RestClientApplication                : Started RestClientApplication in 1.113 seconds (process running for 1.314)
+== APP - rest-client == 2026-01-27T16:12:51.498-05:00  INFO 54323 --- [nio-9001-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+== APP - rest-client == 2026-01-27T16:12:51.498-05:00  INFO 54323 --- [nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+== APP - rest-client == 2026-01-27T16:12:51.498-05:00  INFO 54323 --- [nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+== APP - rest-client == WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+== APP - rest-client == WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4 (jar:nested:/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/grpc-netty-shaded-1.69.0.jar!/)
+== APP - rest-client == WARNING: Please consider reporting this to the maintainers of class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4
+== APP - rest-client == WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+== APP - rest-client == 2026-01-27T16:13:02.508-05:00  INFO 54323 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : Registered Workflow: TicketApprovalWorkflow
+== APP - rest-client == 2026-01-27T16:13:02.509-05:00  INFO 54323 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : Registered Activity: CreateTicketActivity
+== APP - rest-client == 2026-01-27T16:13:02.509-05:00  INFO 54323 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : Registered Activity: NotifyActivity
+== APP - rest-client == 2026-01-27T16:13:02.509-05:00  INFO 54323 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : Registered Activity: ApproveTicketActivity
+== APP - rest-client == 2026-01-27T16:13:02.514-05:00  INFO 54323 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : List of registered workflows: [com.TicketApprovalWorkflow]
+== APP - rest-client == 2026-01-27T16:13:02.514-05:00  INFO 54323 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : List of registered activities: [com.activities.CreateTicketActivity, com.activities.NotifyActivity, com.activities.ApproveTicketActivity]
+== APP - rest-client == 2026-01-27T16:13:02.514-05:00  INFO 54323 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : Successfully built dapr workflow runtime
+== APP - rest-client == Start workflow runtime
+== APP - rest-client == 2026-01-27T16:13:02.515-05:00  INFO 54323 --- [       Thread-1] io.dapr.durabletask                      : Durable Task worker is connecting to sidecar at 127.0.0.1:64239.
+== APP - rest-client == ==========Begin Ticket Workflow==========
+== APP - rest-client == Creating Ticket -> [title=Workflow Ticket, owner=Workflow Admin, approved=false]
+== APP - rest-client == 2026-01-27T16:13:02.739-05:00  INFO 54323 --- [pool-2-thread-1] io.dapr.workflows.WorkflowContext        : Starting Workflow: com.TicketApprovalWorkflow
+== APP - rest-client == 2026-01-27T16:13:02.739-05:00  INFO 54323 --- [pool-2-thread-1] io.dapr.workflows.WorkflowContext        : Current Orchestration Time: 2026-01-27T21:13:02.708Z
+== APP - rest-client == 2026-01-27T16:13:02.759-05:00  INFO 54323 --- [pool-2-thread-1] io.dapr.workflows.WorkflowContext        : Received Ticket: [title=Workflow Ticket, owner=Workflow Admin, approved=false]
+== APP - rest-client == Scheduled new workflow instance of TicketApprovalWorkflow with instance ID: 79ff0efd-a271-49a5-abe4-2c5d74af0f20
+== APP - rest-client == 2026-01-27T16:13:02.775-05:00  INFO 54323 --- [pool-2-thread-1] com.activities.CreateTicketActivity      : Creating ticket -> Workflow Ticket
+== APP - rest-client == Workflow instance 79ff0efd-a271-49a5-abe4-2c5d74af0f20 started
+== APP - rest-client == 2026-01-27T16:13:04.898-05:00  INFO 54323 --- [pool-2-thread-1] com.activities.NotifyActivity            : Ticket has been created -> [title=Workflow Ticket, owner=Workflow Admin, approved=false]
+== APP - rest-client == 2026-01-27T16:13:04.904-05:00  INFO 54323 --- [pool-2-thread-1] com.activities.CreateTicketActivity      : Approving Ticket -> Workflow Ticket
+== APP - rest-client == Workflow instance completed, out is: "DONE"
+== APP - rest-client == TERMINATING WORKFLOW
+
+termination signal received: shutting down

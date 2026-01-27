@@ -1,0 +1,112 @@
+== APP - rest-client == 
+== APP - rest-client ==   .   ____          _            __ _ _
+== APP - rest-client ==  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+== APP - rest-client == ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+== APP - rest-client ==  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+== APP - rest-client ==   '  |____| .__|_| |_|_| |_\__, | / / / /
+== APP - rest-client ==  =========|_|==============|___/=/_/_/_/
+== APP - rest-client == 
+== APP - rest-client ==  :: Spring Boot ::                (v3.3.1)
+== APP - rest-client == 
+== APP - rest-client == 2026-01-27T14:02:07.127-05:00  INFO 19465 --- [           main] com.RestClientApplication                : Starting RestClientApplication v0.0.1-SNAPSHOT using Java 25.0.1 with PID 19465 (/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar started by zacharyweld in /Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client)
+== APP - rest-client == 2026-01-27T14:02:07.131-05:00  INFO 19465 --- [           main] com.RestClientApplication                : No active profile set, falling back to 1 default profile: "default"
+== APP - rest-client == WARNING: A restricted method in java.lang.System has been called
+== APP - rest-client == WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (jar:nested:/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tomcat-embed-core-10.1.25.jar!/)
+== APP - rest-client == WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+== APP - rest-client == WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+== APP - rest-client == 
+== APP - rest-client == 2026-01-27T14:02:07.784-05:00  INFO 19465 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9001 (http)
+== APP - rest-client == 2026-01-27T14:02:07.790-05:00  INFO 19465 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+== APP - rest-client == 2026-01-27T14:02:07.790-05:00  INFO 19465 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+== APP - rest-client == 2026-01-27T14:02:07.802-05:00  INFO 19465 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+== APP - rest-client == 2026-01-27T14:02:07.802-05:00  INFO 19465 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 626 ms
+== APP - rest-client == 2026-01-27T14:02:08.035-05:00  INFO 19465 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9001 (http) with context path '/'
+== APP - rest-client == 2026-01-27T14:02:08.047-05:00  INFO 19465 --- [           main] com.RestClientApplication                : Started RestClientApplication in 1.088 seconds (process running for 1.297)
+== APP - rest-client == 2026-01-27T14:02:08.063-05:00  INFO 19465 --- [nio-9001-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+== APP - rest-client == 2026-01-27T14:02:08.063-05:00  INFO 19465 --- [nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+== APP - rest-client == 2026-01-27T14:02:08.064-05:00  INFO 19465 --- [nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+== APP - rest-client == WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+== APP - rest-client == WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4 (jar:nested:/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/grpc-netty-shaded-1.69.0.jar!/)
+== APP - rest-client == WARNING: Please consider reporting this to the maintainers of class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4
+== APP - rest-client == WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+== APP - rest-client == 2026-01-27T14:02:25.897-05:00  INFO 19465 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : Registered Workflow: TicketApprovalWorkflow
+== APP - rest-client == 2026-01-27T14:02:25.901-05:00  INFO 19465 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : Registered Activity: NotifyActivity
+== APP - rest-client == 2026-01-27T14:02:25.913-05:00  INFO 19465 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : List of registered workflows: [com.TicketApprovalWorkflow]
+== APP - rest-client == 2026-01-27T14:02:25.913-05:00  INFO 19465 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : List of registered activities: [com.activities.NotifyActivity]
+== APP - rest-client == 2026-01-27T14:02:25.913-05:00  INFO 19465 --- [nio-9001-exec-4] i.d.w.runtime.WorkflowRuntimeBuilder     : Successfully built dapr workflow runtime
+== APP - rest-client == Start workflow runtime
+== APP - rest-client == 2026-01-27T14:02:25.915-05:00  INFO 19465 --- [       Thread-1] io.dapr.durabletask                      : Durable Task worker is connecting to sidecar at 127.0.0.1:62519.
+== APP - rest-client == ==========Begin Ticket Workflow==========
+== APP - rest-client == Creating Ticket -> [title=Workflow Ticket, owner=Workflow Admin, approved=false]
+== APP - rest-client == 2026-01-27T14:02:25.989-05:00  INFO 19465 --- [pool-3-thread-1] io.dapr.workflows.WorkflowContext        : Starting Workflow: com.TicketApprovalWorkflow
+== APP - rest-client == 2026-01-27T14:02:25.989-05:00  INFO 19465 --- [pool-3-thread-1] io.dapr.workflows.WorkflowContext        : Current Orchestration Time: 2026-01-27T19:02:25.962Z
+== APP - rest-client == 2026-01-27T14:02:26.009-05:00  INFO 19465 --- [pool-3-thread-1] io.dapr.workflows.WorkflowContext        : Received Ticket: [title=Workflow Ticket, owner=Workflow Admin, approved=false]
+== APP - rest-client == Scheduled new workflow instance of TicketApprovalWorkflow with instance ID: 4f97083d-d28f-40b2-b540-beaa875953f7
+== APP - rest-client == Workflow instance 4f97083d-d28f-40b2-b540-beaa875953f7 started
+== APP - rest-client == 2026-01-27T14:02:26.040-05:00  WARN 19465 --- [pool-3-thread-1] io.dapr.durabletask                      : The orchestrator failed with an unhandled exception: io.dapr.durabletask.TaskFailedException: Task 'com.activities.CreateTicketActivity' (#0) failed with an unhandled exception: No activity task named 'com.activities.CreateTicketActivity' is registered.
+== APP - rest-client == Workflow instance completed, out is: 
+== APP - rest-client == 2026-01-27T14:02:26.044-05:00 ERROR 19465 --- [nio-9001-exec-4] i.g.i.ManagedChannelOrphanWrapper        : *~*~*~ Previous channel ManagedChannelImpl{logId=1, target=dns:///127.0.0.1:62519} was garbage collected without being shut down! ~*~*~*
+== APP - rest-client ==     Make sure to call shutdown()/shutdownNow()
+== APP - rest-client == 
+== APP - rest-client == java.lang.RuntimeException: ManagedChannel allocation site
+== APP - rest-client == 	at io.grpc.internal.ManagedChannelOrphanWrapper$ManagedChannelReference.<init>(ManagedChannelOrphanWrapper.java:102) ~[grpc-core-1.69.0.jar!/:1.69.0]
+== APP - rest-client == 	at io.grpc.internal.ManagedChannelOrphanWrapper.<init>(ManagedChannelOrphanWrapper.java:60) ~[grpc-core-1.69.0.jar!/:1.69.0]
+== APP - rest-client == 	at io.grpc.internal.ManagedChannelOrphanWrapper.<init>(ManagedChannelOrphanWrapper.java:51) ~[grpc-core-1.69.0.jar!/:1.69.0]
+== APP - rest-client == 	at io.grpc.internal.ManagedChannelImplBuilder.build(ManagedChannelImplBuilder.java:710) ~[grpc-core-1.69.0.jar!/:1.69.0]
+== APP - rest-client == 	at io.grpc.ForwardingChannelBuilder2.build(ForwardingChannelBuilder2.java:272) ~[grpc-api-1.69.0.jar!/:1.69.0]
+== APP - rest-client == 	at io.dapr.utils.NetworkUtils.buildGrpcManagedChannel(NetworkUtils.java:226) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.DaprClientBuilder.buildDaprClient(DaprClientBuilder.java:166) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at io.dapr.client.DaprClientBuilder.build(DaprClientBuilder.java:145) ~[dapr-sdk-1.16.0.jar!/:na]
+== APP - rest-client == 	at com.service.TicketService.getTicket(TicketService.java:27) ~[!/:0.0.1-SNAPSHOT]
+== APP - rest-client == 	at com.controller.Controller.getTicket(Controller.java:45) ~[!/:0.0.1-SNAPSHOT]
+== APP - rest-client == 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+== APP - rest-client == 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+== APP - rest-client == 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar!/:6.1.10]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar!/:na]
+== APP - rest-client == 	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+== APP - rest-client == 
+
+termination signal received: shutting down

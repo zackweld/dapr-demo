@@ -1,0 +1,81 @@
+Starting Dapr with id rest-client. HTTP Port: 64618. gRPC Port: 64619
+Updating metadata for cliPID: 14198
+time="2026-01-26T13:08:48.786237-05:00" level=info msg="Starting Dapr Runtime -- version 1.16.7 -- commit f47f8e13a6e39869ac2b01fe984ad2177e357445" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.78628-05:00" level=info msg="Log level set to: info" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.786374-05:00" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.security type=log ver=1.16.7
+time="2026-01-26T13:08:48.786734-05:00" level=info msg="Enabled features: SchedulerReminders" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.786784-05:00" level=info msg="metric spec: {\"enabled\":true}" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.diagnostics type=log ver=1.16.7
+time="2026-01-26T13:08:48.786806-05:00" level=info msg="Using default latency distribution buckets: [1 2 3 4 5 6 8 10 13 16 20 25 30 40 50 65 80 100 130 160 200 250 300 400 500 650 800 1000 2000 5000 10000 20000 50000 100000]" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.diagnostics type=log ver=1.16.7
+time="2026-01-26T13:08:48.786872-05:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.diagnostics type=log ver=1.16.7
+time="2026-01-26T13:08:48.787215-05:00" level=info msg="standalone mode configured" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.787251-05:00" level=info msg="app id: rest-client" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.78744-05:00" level=info msg="metrics server started on 0.0.0.0:64620/" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.787451-05:00" level=info msg="Dapr trace sampler initialized: ParentBased{root:AlwaysOnSampler,remoteParentSampled:AlwaysOnSampler,remoteParentNotSampled:AlwaysOffSampler,localParentSampled:AlwaysOnSampler,localParentNotSampled:AlwaysOffSampler}" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.788091-05:00" level=info msg="local service entry announced: rest-client -> 172.20.10.3:64621" app_id=rest-client component="nr (mdns/v1)" instance=Zacharys-MacBook-Pro-2.local scope=dapr.contrib type=log ver=1.16.7
+time="2026-01-26T13:08:48.788116-05:00" level=info msg="Initialized name resolution to mdns" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.788212-05:00" level=info msg="Loading components…" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.788498-05:00" level=info msg="Waiting for all outstanding components to be processed…" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.79142-05:00" level=info msg="Connected and received scheduler hosts addresses: [localhost:50006]" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.watchhosts type=log ver=1.16.7
+time="2026-01-26T13:08:48.791526-05:00" level=info msg="Scheduler client initialized for address: localhost:50006" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.clients type=log ver=1.16.7
+time="2026-01-26T13:08:48.79154-05:00" level=info msg="Scheduler clients initialized" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.clients type=log ver=1.16.7
+time="2026-01-26T13:08:48.792951-05:00" level=info msg="Using 'statestore' as actor state store" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.processor.state type=log ver=1.16.7
+time="2026-01-26T13:08:48.792986-05:00" level=info msg="Component loaded: statestore (state.redis/v1)" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.processor type=log ver=1.16.7
+time="2026-01-26T13:08:48.792998-05:00" level=info msg="All outstanding components processed" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793009-05:00" level=info msg="Loading endpoints…" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793136-05:00" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793146-05:00" level=info msg="All outstanding http endpoints processed" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793154-05:00" level=info msg="Loading Declarative Subscriptions…" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793355-05:00" level=info msg="gRPC server listening on TCP address: :64619" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.grpc.api type=log ver=1.16.7
+time="2026-01-26T13:08:48.793368-05:00" level=info msg="Enabled gRPC tracing middleware" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.grpc.api type=log ver=1.16.7
+time="2026-01-26T13:08:48.793375-05:00" level=info msg="Enabled gRPC metrics middleware" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.grpc.api type=log ver=1.16.7
+time="2026-01-26T13:08:48.79341-05:00" level=info msg="Registering workflow engine for gRPC endpoint: [::]:64619" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.grpc.api type=log ver=1.16.7
+time="2026-01-26T13:08:48.793434-05:00" level=info msg="API gRPC server is running on port 64619" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793453-05:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-26T13:08:48.793483-05:00" level=info msg="Enabled max body size HTTP middleware with size 4194304 bytes" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-26T13:08:48.793489-05:00" level=info msg="Enabled tracing HTTP middleware" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-26T13:08:48.793494-05:00" level=info msg="Enabled metrics HTTP middleware" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-26T13:08:48.793677-05:00" level=info msg="HTTP server listening on TCP address: :64618" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.http type=log ver=1.16.7
+time="2026-01-26T13:08:48.793693-05:00" level=info msg="HTTP server is running on port 64618" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793699-05:00" level=info msg="The request body size parameter is: 4194304 bytes" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793725-05:00" level=info msg="gRPC server listening on TCP address: :64621" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.grpc.internal type=log ver=1.16.7
+time="2026-01-26T13:08:48.793737-05:00" level=info msg="Enabled gRPC tracing middleware" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.grpc.internal type=log ver=1.16.7
+time="2026-01-26T13:08:48.793748-05:00" level=info msg="Enabled gRPC metrics middleware" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.grpc.internal type=log ver=1.16.7
+time="2026-01-26T13:08:48.793766-05:00" level=info msg="Internal gRPC server is running on :64621" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:48.793773-05:00" level=info msg="application protocol: http. waiting on port 9001.  This will block until the app is listening on that port." app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+Updating metadata for app command: java -jar target/RestClient-0.0.1-SNAPSHOT.jar
+Updating metadata for appPID: 14202
+You're up and running! Dapr logs will appear here.
+
+time="2026-01-26T13:08:50.109042-05:00" level=info msg="application discovered on port 9001" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:50.10924-05:00" level=info msg="Using Scheduler service for reminders." app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actor.reminders.scheduler type=log ver=1.16.7
+time="2026-01-26T13:08:50.10933-05:00" level=info msg="Actor runtime started" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actor type=log ver=1.16.7
+time="2026-01-26T13:08:50.109348-05:00" level=warning msg="Graceful shutdown timeout is infinite, will wait indefinitely to shutdown" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actor type=log ver=1.16.7
+time="2026-01-26T13:08:50.109374-05:00" level=info msg="worker started with backend dapr.actors/v1" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.wfengine.durabletask.backend type=log ver=1.16.7
+time="2026-01-26T13:08:50.109437-05:00" level=info msg="Workflow engine started" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.wfengine type=log ver=1.16.7
+time="2026-01-26T13:08:50.171004-05:00" level=info msg="Application configuration loaded" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:50.171069-05:00" level=info msg="dapr initialized. Status: Running. Init Elapsed 1383ms" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime type=log ver=1.16.7
+time="2026-01-26T13:08:50.171131-05:00" level=info msg="Reporting actor types: []" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.placement type=log ver=1.16.7
+time="2026-01-26T13:08:50.171286-05:00" level=info msg="Connected to placement localhost:50005" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.placement.client.connector.static type=log ver=1.16.7
+time="2026-01-26T13:08:50.171321-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+time="2026-01-26T13:08:50.171333-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+time="2026-01-26T13:08:50.171334-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+time="2026-01-26T13:08:50.174377-05:00" level=info msg="Connected to placement localhost:50005" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.placement.client type=log ver=1.16.7
+time="2026-01-26T13:08:50.175335-05:00" level=info msg="Placement tables updated, version: 2" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.placement type=log ver=1.16.7
+time="2026-01-26T13:08:50.175371-05:00" level=info msg="Running actor reminder migration from state store to scheduler" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.7
+time="2026-01-26T13:08:50.175381-05:00" level=info msg="Skipping migration, no missing scheduler reminders found" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.7
+time="2026-01-26T13:08:50.175387-05:00" level=info msg="Found 0 missing scheduler reminders from state store" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.7
+time="2026-01-26T13:08:50.175393-05:00" level=info msg="Migrated 0 reminders from state store to scheduler successfully" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.7
+
+termination signal received: shutting down
+time="2026-01-26T13:11:17.199076-05:00" level=info msg="Received signal 'interrupt'; beginning shutdown" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.signals type=log ver=1.16.7
+time="2026-01-26T13:11:17.20087-05:00" level=info msg="Actor runtime shutting down" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actor type=log ver=1.16.7
+time="2026-01-26T13:11:17.200887-05:00" level=info msg="backend stopping..." app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.wfengine.durabletask.backend type=log ver=1.16.7
+time="2026-01-26T13:11:17.201028-05:00" level=info msg="workers stopping and draining..." app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.wfengine.durabletask.backend type=log ver=1.16.7
+time="2026-01-26T13:11:17.201081-05:00" level=info msg="activity-processor: worker stopped" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.wfengine.durabletask.backend type=log ver=1.16.7
+time="2026-01-26T13:11:17.201207-05:00" level=error msg="Error communicating with placement: rpc error: code = Canceled desc = context canceled" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.actors.placement.client type=log ver=1.16.7
+time="2026-01-26T13:11:17.201214-05:00" level=info msg="Scheduler stream disconnected" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+time="2026-01-26T13:11:17.201201-05:00" level=info msg="orchestration-processor: worker stopped" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.wfengine.durabletask.backend type=log ver=1.16.7
+time="2026-01-26T13:11:17.201243-05:00" level=info msg="Scheduler stream disconnected" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+time="2026-01-26T13:11:17.201247-05:00" level=info msg="Scheduler stream disconnected" app_id=rest-client instance=Zacharys-MacBook-Pro-2.local scope=dapr.runtime.scheduler.cluster type=log ver=1.16.7
+Exited Dapr successfully
+Exited App successfully

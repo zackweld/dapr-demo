@@ -1,0 +1,33 @@
+== APP - rest-client == 
+== APP - rest-client ==   .   ____          _            __ _ _
+== APP - rest-client ==  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+== APP - rest-client == ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+== APP - rest-client ==  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+== APP - rest-client ==   '  |____| .__|_| |_|_| |_\__, | / / / /
+== APP - rest-client ==  =========|_|==============|___/=/_/_/_/
+== APP - rest-client == 
+== APP - rest-client ==  :: Spring Boot ::                (v3.3.1)
+== APP - rest-client == 
+== APP - rest-client == 2026-01-26T13:08:09.724-05:00  INFO 13733 --- [           main] com.RestClientApplication                : Starting RestClientApplication v0.0.1-SNAPSHOT using Java 25.0.1 with PID 13733 (/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar started by zacharyweld in /Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client)
+== APP - rest-client == 2026-01-26T13:08:09.727-05:00  INFO 13733 --- [           main] com.RestClientApplication                : No active profile set, falling back to 1 default profile: "default"
+== APP - rest-client == WARNING: A restricted method in java.lang.System has been called
+== APP - rest-client == WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (jar:nested:/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tomcat-embed-core-10.1.25.jar!/)
+== APP - rest-client == WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+== APP - rest-client == WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+== APP - rest-client == 
+== APP - rest-client == 2026-01-26T13:08:10.399-05:00  INFO 13733 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9001 (http)
+== APP - rest-client == 2026-01-26T13:08:10.404-05:00  INFO 13733 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+== APP - rest-client == 2026-01-26T13:08:10.404-05:00  INFO 13733 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+== APP - rest-client == 2026-01-26T13:08:10.416-05:00  INFO 13733 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+== APP - rest-client == 2026-01-26T13:08:10.416-05:00  INFO 13733 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 634 ms
+== APP - rest-client == 2026-01-26T13:08:10.648-05:00  INFO 13733 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9001 (http) with context path '/'
+== APP - rest-client == 2026-01-26T13:08:10.656-05:00  INFO 13733 --- [           main] com.RestClientApplication                : Started RestClientApplication in 1.102 seconds (process running for 1.298)
+== APP - rest-client == 2026-01-26T13:08:10.743-05:00  INFO 13733 --- [nio-9001-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+== APP - rest-client == 2026-01-26T13:08:10.743-05:00  INFO 13733 --- [nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+== APP - rest-client == 2026-01-26T13:08:10.743-05:00  INFO 13733 --- [nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+== APP - rest-client == WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+== APP - rest-client == WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4 (jar:nested:/Users/zacharyweld/Documents/Code/Diagrid/Demo/rest-client/target/RestClient-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/grpc-netty-shaded-1.69.0.jar!/)
+== APP - rest-client == WARNING: Please consider reporting this to the maintainers of class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4
+== APP - rest-client == WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+
+termination signal received: shutting down

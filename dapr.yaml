@@ -1,0 +1,11 @@
+version: 1
+common:
+  resourcesPath: ./components
+apps:
+  - appID: rest-client
+    appDirPath: ./rest-client/
+    appPort: 9001
+    command: ["java", "-jar", "target/RestClient-0.0.1-SNAPSHOT.jar"]
+  # - appID: workflow
+  #   appDirPath: ./workflow/target
+  #   command: ["java", "-jar", "WorkflowService-0.0.1-SNAPSHOT.jar", "io.dapr.quickstarts.workflow.WorkflowConsoleApp"]
