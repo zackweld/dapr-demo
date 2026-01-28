@@ -1,0 +1,4 @@
+*.jar
+*.log
+/rest-client/target
+/rest-client/.dapr
