@@ -18,7 +18,7 @@
 
 # Http Controller 
 
-- Contoller path - http://localhost:9001/
+- Contoller path - http://localhost:9001
 
     - Header -> dapr-app-id = rest-client
 
