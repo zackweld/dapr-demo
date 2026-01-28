@@ -43,7 +43,7 @@ public class TicketApprovalWorkflow implements Workflow{
             // Notify
 
             // End Process
-            ctx.complete("DONE");
+            ctx.complete("Ticket Approval Complete");
         };
     }
 }

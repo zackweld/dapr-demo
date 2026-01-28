@@ -9,7 +9,7 @@ import io.dapr.client.domain.State;
 import reactor.core.publisher.Mono;
 
 public class TicketService {
-    private static final String STATE_STORE_NAME = "statestore";
+    private static final String STATE_STORE_NAME = "kvstore";
     private static final String KEY = "ticket";
 
     public String createTicket(Ticket ticket) {

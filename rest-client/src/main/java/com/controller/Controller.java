@@ -16,6 +16,7 @@ import org.springframework.http.MediaType;
 public class Controller {
     private TicketService ticketService = new TicketService();
     private WorkflowService workflowService = new WorkflowService();
+    private static final String DAPR_HTTP_PORT = System.getenv().getOrDefault("DAPR_HTTP_PORT", "3500");
     @GetMapping(path = "/test")
     public String test() {
         return "Dapr Test";

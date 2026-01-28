@@ -71,6 +71,10 @@ public class WorkflowService {
 
         System.out.println("TERMINATING WORKFLOW");
         workflowClient.terminateWorkflow(instanceId, instanceId);
-        workflowClient.purgeInstance(instanceId);
+        try {
+            workflowClient.close();
+        } catch (InterruptedException e) {
+            System.out.println("Failed to close!");
+        }
     }
 }
