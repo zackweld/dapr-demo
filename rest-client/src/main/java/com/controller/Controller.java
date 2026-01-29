@@ -16,7 +16,7 @@ import org.springframework.http.MediaType;
 public class Controller {
     private TicketService ticketService = new TicketService();
     private WorkflowService workflowService = new WorkflowService();
-    private static final String DAPR_HTTP_PORT = System.getenv().getOrDefault("DAPR_HTTP_PORT", "3500");
+    
     @GetMapping(path = "/test")
     public String test() {
         return "Dapr Test";
@@ -24,25 +24,16 @@ public class Controller {
 
     @PostMapping(path = "/ticket", consumes = MediaType.ALL_VALUE)
     public String createTicket(@RequestBody Ticket ticket) {
-        // DaprClient daprClient = new DaprClientBuilder().build();
-        // daprClient.saveState(STATE_STORE_NAME, KEY, ticket).block();
-        // return "Ticket Created -> " + ticket.toString();
         return ticketService.createTicket(ticket);
     }
 
     @DeleteMapping(path = "/ticket")
     public String deleteTicket() {
-        // DaprClient daprClient = new DaprClientBuilder().build();
-        // daprClient.deleteState(STATE_STORE_NAME, KEY).block();
-        // return "Ticket Deleted!";
         return ticketService.deleteTicket();
     }
 
     @GetMapping(path = "/ticket")
     public String getTicket() {
-        // DaprClient daprClient = new DaprClientBuilder().build();
-        // Mono<State<Ticket>> ticket = daprClient.getState(STATE_STORE_NAME, KEY, Ticket.class); 
-        // return "Ticket -> " + ticket.block().getValue();
         return ticketService.getTicket();
     }
 
