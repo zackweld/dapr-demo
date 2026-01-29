@@ -25,6 +25,6 @@ public class CreateTicketActivity implements WorkflowActivity{
         }
 
         ticketService.createTicket(ticket);
-        return "Ticket " + ticket.getTitle() + " created!";
+        return "Ticket \"" + ticket.getTitle() + "\" created!";
     }
 }

@@ -28,14 +28,14 @@ public class TicketApprovalWorkflow implements Workflow{
 
             // Notify
             Notification notification = new Notification();
-            notification.setMessage("Ticket has been created -> " + ticket.toString());
+            notification.setMessage("Ticket has been created -> " + ticket.getTitle());
             ctx.callActivity(NotifyActivity.class.getName(), notification).await();
 
             // Approve Ticket
             ctx.callActivity(ApproveTicketActivity.class.getName(), ticket).await();
 
             // Notify
-            notification.setMessage("Ticket has been approved!");
+            notification.setMessage("Ticket has been approved! -> " + ticket.toString());
             ctx.callActivity(NotifyActivity.class.getName(), notification).await();
 
             // Close Ticket

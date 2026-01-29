@@ -28,7 +28,7 @@ public class ApproveTicketActivity implements WorkflowActivity{
             ticket.setApproved(true);
         }
         ticketService.createTicket(ticket);
-        return "Ticket " + ticket.getTitle() + " has been approved!";
+        return "Ticket \"" + ticket.getTitle() + "\" has been approved!";
     }
     
 }
